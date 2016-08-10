@@ -1,29 +1,30 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- *
- * @author Jose
+ * @author Jose Martinez, David Sanchinelli, Juan Pablo Zea, Diego Hurtarte
+ * @version 10/08/16
  */
-public class Robot implements iRobot {
-
-    @Override
-    public void moverAdelante() {
+public class Robot {
+    
+    public void analizar() {
         
     }
-
-    @Override
-    public void girarDerecha() {
+    
+    public void moverNorte() {
+        
+    }
+    
+    public void moverOeste() {
        
     }
 
-    @Override
-    public void girarIzquierda() {
+    public void moverEste() {
         
     }
+    
+    public void moverSur() {
+        
+    }
+    
+}
     
     
     
