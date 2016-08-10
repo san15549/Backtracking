@@ -4,6 +4,9 @@
  */
 public class Robot {
     
+    private int posicion1;
+    private int posicion2;
+    
     public void analizar() {
         
     }
@@ -23,9 +26,5 @@ public class Robot {
     public void moverSur() {
         
     }
-    
-}
-    
-    
     
 }
