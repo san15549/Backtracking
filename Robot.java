@@ -68,28 +68,64 @@ public class Robot {
 
     @Override
     public boolean libreDerecha(String[][] lab) {
-        if (direccion == 1){
-            
-        } else if (direccion == 2){
-            
-        } else if (direccion == 3){
-            
-        } else if (direccion ==4){
-            
+        boolean libre = false;
+    if (direccion == 4){
+        if (lab[posy][posx + 1].equals(" ")){
+            libre = true;
+        }else {
+            libre = false;
         }
+    } else if (direccion == 1){
+        if (lab[posy + 1][posx].equals(" ")){
+            libre = true;
+        }else {
+            libre = false;
+        }
+    } else if (direccion == 2){
+        if (lab[posy][posx - 1].equals (" ")){
+            libre = true;
+        } else {
+            libre = false;
+        }
+    } else if (direccion == 3){
+        if (lab[posy - 1][posx].equals (" ")){
+            libre = true;
+        } else {
+            libre = false;
+        }
+    }
+    return libre;
     }
 
     @Override
     public boolean libreIzquierda(String[][] lab) {
-        if (direccion == 1){
-            
-        } else if (direccion == 2){
-            
-        } else if (direccion == 3){
-            
-        } else if (direccion ==4){
-            
+        boolean libre = false;
+    if (direccion == 2){
+        if (lab[posy][posx - 1].equals(" ")){
+            libre = true;
+        }else {
+            libre = false;
         }
+    } else if (direccion == 3){
+        if (lab[posy - 1][posx].equals(" ")){
+            libre = true;
+        }else {
+            libre = false;
+        }
+    } else if (direccion == 4){
+        if (lab[posy][posx + 1].equals (" ")){
+            libre = true;
+        } else {
+            libre = false;
+        }
+    } else if (direccion == 1){
+        if (lab[posy + 1][posx].equals (" ")){
+            libre = true;
+        } else {
+            libre = false;
+        }
+    }
+    return libre;
     }
     
 }
