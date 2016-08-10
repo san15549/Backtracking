@@ -3,9 +3,9 @@
  * @author Jose
  */
 public interface iSensor {
-    public boolean libreAdelante();
+    public boolean libreAdelante(String[][] lab);
     
-    public boolean libreDerecha();
+    public boolean libreDerecha(String[][] lab);
     
-    public boolean libreIzquierda();
+    public boolean libreIzquierda(String[][] lab);
 }
