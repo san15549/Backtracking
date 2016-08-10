@@ -38,7 +38,7 @@ public class Robot {
     public boolean libreAdelante(String[][] lab) {
         boolean libre = false;
         if (direccion == 1){
-            if (lab[posy - 1][posx].equals(" ")){
+            if (lab[posy + 1][posx].equals(" ")){
                 libre = true;
             } else {
                 libre = false;
@@ -55,8 +55,8 @@ public class Robot {
             } else {
                 libre = false;
             }
-        } else if (direccion ==4){
-            if (lab[posy][posx + 1].equals(" ")){
+        } else if (direccion == 4){
+            if (lab[posy][posx - 1].equals(" ")){
                 libre = true;
             } else {
                 libre = false;
