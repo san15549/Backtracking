@@ -1,9 +1,9 @@
 
 import java.util.Vector;
 
-/*
- *
- * @author Jose
+/**
+ * @author Jose Martinez, David Sanchinelli, Juan Pablo Zea, Diego Hurtarte
+ * @version 10/08/16
  */
 
 public class CaminoP {
